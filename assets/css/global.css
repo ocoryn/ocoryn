@@ -1,0 +1,139 @@
+/*
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+* │                                                                   │
+* │                           Fonts Link                              │
+* │                                                                   │
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/panton');
+
+/*
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+* │                                                                   │
+* │                           Root Variable                           │
+* │                                                                   │
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+*/
+
+:root {
+    --dc-darker: #111319;
+    --dc-half-darker: #1f222e;
+    --dc-dark: #242835;
+    --dc-typography: #fff;
+    --dc-primary: orange;
+    --dc-secondary: darkorange;
+}
+
+
+/*
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+* │                                                                   │
+* │                           Main CSS code                           │
+* │                                                                   │
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+*/
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 130%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    scroll-behavior: smooth !important;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--dc-darker) !important;
+}
+
+body {
+    background-color: var(--dc-darker);
+    font-family: 'Poppins', sans-serif;
+    background-position: right center;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    color: var(--dc-typography);
+    background-size: 50% auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+::selection {
+    background: #eee;
+    color: #1f1e1c;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dc-darker);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 2em;
+    border: .36em var(--dc-darker) solid;
+}
+
+::-webkit-scrollbar-corner {
+    background: none;
+}
+
+.t-yellow {
+    color: orange;
+}
+
+.t-white {
+    color: #FFFFFF;
+}
+
+.space-2 {
+    letter-spacing: 2px;
+}
+
+.mt-1 {
+    margin-top: 5px;
+}
+
+.social-medias {
+    width: 100%;
+    display: flex;
+}
+
+.icon {
+    font-size: 30px;
+    padding-right: 1rem;
+    transition: 0.1s ease;
+}
+
+.icon:hover {
+    color: orange;
+    transform: scale(1.30);
+}
+
+.dc-btn {
+    background: var(--dc-primary) !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 900 !important;
+}
+
+.dc-btn:hover {
+    background: var(--dc-secondary) !important;
+}

@@ -1,0 +1,163 @@
+/*
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+* │                                                                         │
+* │                        Bootstrap Navigation Bar                         │
+* │                                                                         │
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+*/
+
+.navbar {
+    background-color: var(--dc-half-darker) !important;
+    padding: 30px 10px !important;
+    margin: 0 0.9rem 0 0.9rem;
+    margin-top: 0.9rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 18px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 2px 18px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 18px 3px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-brand {
+    font-family: 'Panton', sans-serif;
+    font-size: 30px !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler,
+.navbar-toggler-icon:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border: 0 !important;
+}
+
+#navbarNav>ul>li:nth-child(n)>a {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--dc-typography);
+    transition: 0.4s ease;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-weight: 800;
+    opacity: 70%;
+}
+
+#navbarNav>ul>li:nth-child(n)>a:hover {
+    opacity: 90%;
+}
+
+
+/*
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+* │                                                                         │
+* │                             banner CSS Code                             │
+* │                                                                         │
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+*/
+
+.dc-banner {
+    color: #ffffff;
+    background-image: url(../img/banner.png);
+    background-position: center center;
+    margin-top: 7.8rem !important;
+    margin: 0 0.9rem 0 0.9rem;
+    background-size: cover;
+    position: relative;
+    border-radius: 8px;
+    min-height: 400px;
+    padding-top: 60px;
+    height: auto;
+}
+
+.dc-banner:before {
+    background-color: rgba(29, 29, 29, 0.7);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    border-radius: 8px;
+    height: 100%;
+    content: "";
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.dc-banner .first-title {
+    font-family: 'Panton', sans-serif;
+    text-transform: uppercase;
+    margin: 0px 0px 12px;
+    position: relative;
+    padding-top: 5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 50px;
+    z-index: 2;
+}
+
+
+/*
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+* │                                                                         │
+* │                            Project CSS Code                             │
+* │                                                                         │
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+*/
+
+.project {
+    background-color: #1a1d26;
+}
+
+hr.desaku-hr {
+    border: 2px solid orange;
+    opacity: 100%;
+    margin-left: 3rem;
+    margin-right: 50rem;
+    border-radius: 5px;
+}
+
+hr.desaku-hr2 {
+    border: 2px solid orange;
+    opacity: 100%;
+    margin-left: 1rem;
+    margin-right: 18rem;
+}
+
+@media only screen and (max-width: 600px) {
+    hr.desaku-hr {
+        margin-left: 1rem;
+        margin-right: 7rem;
+    }
+    hr.desaku-hr2 {
+        margin-left: 1rem;
+        margin-right: 7rem;
+    }
+}
+
+.card-desaku {
+    background-color: var(--dc-half-darker) !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: var(--dc-typography);
+    border: 0 !important;
+}
+
+
+/*
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+* │                                                                   │
+* │                      Form Customization                           │
+* │                                                                   │
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+*/
+
+.form-control:focus,
+.form-control:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: var(--dc-primary) solid 0.2rem !important;
+}
+
+.form-control {
+    background: var(--dc-dark) !important;
+    color: var(--dc-dark) !important;
+    border: var(--dc-dark) solid 0.2rem !important;
+}
